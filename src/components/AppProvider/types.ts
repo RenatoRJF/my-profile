@@ -2,11 +2,15 @@ export interface Props {
   children: React.ReactNode;
 };
 
-export type AppState = {
+export interface Context {
   locale: string;
 }
 
-export type ActionMap<M extends { [index: string]: AppState }> = {
+type LangPayload = {
+  locale: string;
+}
+
+export type ActionMap<M extends { [index: string]: LangPayload }> = {
   [Key in keyof M]: M[Key] extends undefined ? { type: Key } : { type: Key; payload: M[Key] };
 };
 
@@ -15,7 +19,7 @@ export enum ActionTypes {
 }
 
 export type AppPayload = {
-  [ActionTypes.changeAppLang]: AppState;
+  [ActionTypes.changeAppLang]: LangPayload;
 };
 
 export type AppActions = ActionMap<AppPayload>[keyof ActionMap<AppPayload>];

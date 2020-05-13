@@ -9,7 +9,8 @@
     "sourceMap": true,
     "noImplicitAny": true,
     "target": "es5",
-    "types": ["react", "jest"]
+    "types": ["react", "jest"],
+    "resolveJsonModule": true,
   },
   "include": [
     "./src/**/*"

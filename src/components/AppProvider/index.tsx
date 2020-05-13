@@ -1,19 +1,23 @@
 import * as React from 'react'; 
-import { AppState, AppActions, Props } from './types';
+import { IntlProvider } from 'react-intl';
+import { Context, AppActions, Props, ActionTypes } from './types';
+import translations from '../../i18n';
 
-const initialContext = {
-  locale: 'en',
+const initialContext: Context = {
+  locale: 'en-US',
 };
 
-export const AppContext = React.createContext<{ state: AppState; dispatch: React.Dispatch<AppActions> }>({
+export const AppContext = React.createContext<{ state: Context; dispatch: React.Dispatch<AppActions> }>({
   state: initialContext,
   dispatch: () => null
 });
 
-function reducer(state: AppState = initialContext, action: AppActions): AppState {
+function reducer(state: Context = initialContext, action: AppActions): Context {
   switch (action.type) {
-    case 'CHANGE_APP_LANG': 
+    case ActionTypes.changeAppLang: 
       return action.payload.locale ? { ...state, locale: action.payload.locale } : state;
+    default:
+      return state;
   }
 }
 
@@ -22,7 +26,9 @@ export default function AppProvider({ children }: Props): React.ReactElement {
 
   return (
     <AppContext.Provider value={{ state, dispatch }}>
-      {children}
+      <IntlProvider locale={state.locale} defaultLocale={state.locale}  messages={translations[state.locale]}>
+        {children}
+      </IntlProvider>
     </AppContext.Provider>
   );
 }
