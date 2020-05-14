@@ -4,7 +4,8 @@
   "description": "This is my personal page",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -24,8 +25,12 @@
   },
   "homepage": "https://github.com/RenatoRJF/my-profile#readme",
   "dependencies": {
+    "@types/enzyme": "^3.10.5",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/jest": "^25.2.2",
     "@types/styled-components": "^5.1.0",
     "file-loader": "^6.0.0",
+    "jest": "^25",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-intl": "^4.5.3",
@@ -36,9 +41,11 @@
     "@types/react": "^16.9.35",
     "@types/react-dom": "^16.9.8",
     "@types/react-intl": "^3.0.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
     "html-webpack-plugin": "^4.3.0",
-    "jest": "^26.0.1",
     "source-map-loader": "^0.2.4",
+    "ts-jest": "^25.5.1",
     "ts-loader": "^7.0.4",
     "typescript": "^3.9.2",
     "webpack": "^4.43.0",
