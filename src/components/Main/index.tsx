@@ -3,14 +3,19 @@ import styled from 'styled-components';
 import { FormattedMessage } from 'react-intl';
 import { AppContext } from '../AppProvider';
 import { ActionTypes } from '../AppProvider/types';
+import Header from '../Header';
 
 const Container = styled.div({
-  display: 'flex',
+  width: '100%',
+  maxWidth: 1000,
+  marginLeft: 'auto',
+  marginRight: 'auto',
+  backgroundColor: '#2A4058',
 });
 
-const LangButton = styled.button({
-  color: '#888',
-  marginLeft: 20,
+const Content = styled.section({
+  padding: 40,
+  backgroundColor: '#ffffff',
 });
 
 export default function Main(): React.ReactElement {
@@ -25,9 +30,9 @@ export default function Main(): React.ReactElement {
 
   return (
     <Container>
-      <FormattedMessage id="hi-i-am" />
-      <LangButton onClick={() => { handleChangeLanguage('en-US'); }}>En</LangButton>
-      <LangButton onClick={() => { handleChangeLanguage('pt-BR'); }}>Pt</LangButton>
+      <Header />
+
+      <Content />
     </Container>
   );
 }

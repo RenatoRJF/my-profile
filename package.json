@@ -25,19 +25,21 @@
   "homepage": "https://github.com/RenatoRJF/my-profile#readme",
   "dependencies": {
     "@types/styled-components": "^5.1.0",
+    "file-loader": "^6.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-intl": "^4.5.3",
-    "styled-components": "^5.1.0"
+    "styled-components": "^5.1.0",
+    "svg-url-loader": "^5.0.0"
   },
   "devDependencies": {
     "@types/react": "^16.9.35",
     "@types/react-dom": "^16.9.8",
     "@types/react-intl": "^3.0.0",
-    "awesome-typescript-loader": "^5.2.1",
     "html-webpack-plugin": "^4.3.0",
     "jest": "^26.0.1",
     "source-map-loader": "^0.2.4",
+    "ts-loader": "^7.0.4",
     "typescript": "^3.9.2",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",

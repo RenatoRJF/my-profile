@@ -11,13 +11,25 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        loader: 'awesome-typescript-loader',
+        use: 'ts-loader',
+        exclude: /node_modules/,
       },
       {
         enforce: 'pre',
         test: /\.js$/,
         loader: 'source-map-loader',
-      }
+      },
+      {
+        test: /\.(png|jp(e*)g|svg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'images/[hash]-[name].[ext]',
+            },
+          },
+        ],
+      },
     ]
   },
   plugins: [
