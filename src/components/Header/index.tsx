@@ -101,7 +101,11 @@ const DownloadCVButton = styled.button({
   padding: 10,
   fontSize: 16,
   outline: 'none',
-  cursor: 'pointer'
+  cursor: 'pointer',
+  
+  '&:hover': {
+    backgroundColor: 'rgba(255, 255, 255, 0.38)',
+  }
 });
 
 const DownloadIcon = styled.img({
@@ -115,7 +119,7 @@ const HeaderContent = styled.div({
   justifyContent: 'center',
   alignItems: 'center',
   flexDirection: 'column',
-  backgroundImage: `url(src/images/circle-background.svg)`,
+  backgroundImage: `url(images/circle-background.svg)`,
   minHeight: 250
 });
 
