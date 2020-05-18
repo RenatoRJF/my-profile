@@ -7,7 +7,7 @@ import Header from '../Header';
 
 const Container = styled.div({
   width: '100%',
-  maxWidth: 1000,
+  maxWidth: 1366,
   marginLeft: 'auto',
   marginRight: 'auto',
   backgroundColor: '#2A4058',
@@ -15,7 +15,7 @@ const Container = styled.div({
 
 const Content = styled.section({
   padding: 40,
-  backgroundColor: '#ffffff',
+  backgroundColor: '#F2F2F2',
 });
 
 export default function Main(): React.ReactElement {
