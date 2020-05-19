@@ -1,3 +1,6 @@
 {
-  "hi-i-am": "Olá, eu sou"
+  "hi-i-am": "Olá, eu sou",
+  "current-job": "Current job",
+  "about-me-first-paragraph": "Olá! Bem vindo ao meu perfil profissional. Meu nome é Renato Ferreira. Sou brasileiro, mas atualmente moro nos Países baixos. Sou desenvolvedor de softwares há pouco mais de 7 anos. Embora durante a maior parte da minha carreira eu estive focado no desenvolvimento de aplicacões assumindo o cargo de  desenvolvedor front-end, as minhas habilidades também se extendem para o desenvoldimento backend e mobile. Já trabalhei e experimentei diversas linguagens e tecnologias,  mas hoje, p principal foco é a contrucão de aplicações(web ,mobile, server) com tecnologias Javascript. Dentre vários frameworks e bibliotecas, minha preferência é a stack com React, React Native e NodeJS. Duas coisas que me descrevem bem como profissional são:  aprender coisas novas e compartilhar compartilhar conhecimento. ",
+  "about-me-second-paragraph": "Como toda vida boa, a minha também não se resume apenas ao trabalho. No meu tempo livre eu gosto de passá-lo com a minha esposa ou em outras coisas como: ir à igreja, praticar esportes, cantar, tocar (piano, guitar), viajar, assistir um bom filme, etc. "
 }

@@ -1,0 +1,70 @@
+{ 
+  "data": [
+    {
+      "id": 1, 
+      "companyImage": "vonq", 
+      "country": "netherlands",
+      "companyName": "VONQ",
+      "role": "Senior Frontend Engineer",
+      "isCurrent": true,
+      "jobDescription": "VONQ is a company based in Rotterdam whose product is a platform that helps recruiters to create campaigns for jobs in a centralized way and buy channels integrated to publish job opportunities. My main responsibilities are: To maintain the Job Market Platform which was created with React + Redux by adding new functionalities, integrating new technologies and aligning the user experience with the Marketing department. Our backend is implemented with PHP and Symphony framework. The main technologies we use are: HTML5, CSS3, ES6+,Jest, PHP, Symphony. We are an agile team and we use the SCRUM Methodology for it.",
+      "technologies": ["React", "Redux", "Javascript", "Jest", "HTML5", "CSS3", "Webpack"],
+      "period": "JULY 2019"
+    },
+    {
+      "id": 2, 
+      "companyImage": "thales", 
+      "country": "portugal",
+      "companyName": "Thales Portugal",
+      "role": "Senior Frontend Engineer",
+      "isCurrent": false,
+      "jobDescription": "Thales group is a multinational company whose main products are systems related to security, military and transportation. As frontend developer at the Thales Group Portugal, I was responsible for creating core components based in Javascript and Web Components concept. The goal of building these web Components were to share functional modules of software to other developers of Thales around the world and help them to maintain the consistency between different applications. I was also responsible for leading a small team of junior developers. The main technologies I used in this experience were: Polymer, Typescript, ES6+, HTML5, CSS3, NodeJs, Selenium. We were also using SCRUM as agile methodology and TDD programming practice.",
+      "technologies": ["Javascript", "Typescript", "Jest", "Polymer", "HTML5", "CSS3", "Webpack"],
+      "period": "APRIL 2018 to JULY 2019"
+    },
+    {
+      "id": 3, 
+      "companyImage": "spotqa", 
+      "country": "england",
+      "companyName": "SpotQA",
+      "role": "Senior Frontend Engineer",
+      "isCurrent": false,
+      "jobDescription": "SpotQA is a startup based in London whose main products are related to quality assurance. In the period that I was working there as Frontend engineer, my main responsibilities were: to maintain the website that was made with wordpress, maintain reactjs projects and implement one of the main applications by using VueJS + VueX. The main technologies I used in this experience were: HTML5, CSS3, ReactJS + Redux, VueJS + VueX, D3.js, Wordpress. We were also using SCRUM as agile methodology and TDD programming practice.",
+      "technologies": ["Vue", "Javascript", "Jest", "D3.js", "HTML5", "CSS3", "Webpack"],
+      "period": "JULY 2017 - MARCH 2018"
+    },
+    {
+      "id": 4, 
+      "companyImage": "alocado", 
+      "country": "brazil",
+      "companyName": "Alocado",
+      "role": "Tech Lead Frontend Engineer",
+      "isCurrent": false,
+      "jobDescription": "Alocado was a startup based in São Paulo whose product was an application for renting places (e.g. offices) for hours. As frontend developer I was responsible for creating and maintaining the platform by using the following technologies: HTML5, CSS3, VueJS, VueX, Jest, ES6. The backend were implemented with PHP and Laravel. We were also using SCRUM as agile methodology and TDD programming practice.",
+      "technologies": ["Vue", "Javascript", "Jest", "Google Maps", "HTML5", "CSS3", "Webpack"],
+      "period": "NOVEMBER 2016 to JUNE 2017"
+    },
+    {
+      "id": 5, 
+      "companyImage": "planedia", 
+      "country": "portugal",
+      "companyName": "Planedia",
+      "role": "Senior Frontend Engineer",
+      "isCurrent": false,
+      "jobDescription": "Planedia was a startup based in Portugal whose product was an application for planning trips. As Frontend developer, my main responsibilities were to migrate the application from AngularJS to React + Redux. The main technologies I used in this experience were: AngularJS, React + Redux, HTML, CSS3, Karma, Jasmine, Chai. We were using SCRUM as agile methodology and TDD programming practice.",
+      "technologies": ["React", "AngularJS", "Javascript", "HTML5", "CSS3", "Gulp", "Karma", "Jasmine"],
+      "period": "OCTOBER 2015 - NOVEMBER 2016"
+    },
+    {
+      "id": 6, 
+      "companyImage": "alepe", 
+      "country": "brazil",
+      "companyName": "Alepe",
+      "role": "Senior Frontend Engineer",
+      "isCurrent": false,
+      "jobDescription": "As fullstack developer, I was responsible for building and maintaining an internal system for the government of the state of Pernambuco, Brazil. The main technologies used to build this software were: C#, SQLServer, AngularJS, HTML5 and CSS3. We were using SCRUM as agile methodology and TDD programming practice.",
+      "technologies": ["AngularJS", "Javascript", "HTML5", "CSS3", "Karma", "Jasmine", "Gulp"],
+      "period": "JUNE 2013 - SEPTEMBER 2015"
+    }
+  ] 
+}

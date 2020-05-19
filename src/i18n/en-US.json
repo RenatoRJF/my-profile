@@ -1,3 +1,6 @@
 {
-  "hi-i-am": "Hi, I am"
+  "hi-i-am": "Hi, I am",
+  "current-job": "Current job",
+  "about-me-first-paragraph": "Hello! Welcome to my professional profile. My name is Renato Ferreira. I am Brazilian, but I currently live in the Netherlands. I have been a software developer for just over 7 years. Although for most of my career I have been focused on application development by taking on the role of front-end developer, my skills also extend to backend and mobile development. I have already worked and tried several languages ​​and technologies, but today, the main focus is on building applications (web, mobile, server) with Javascript technologies. Among several frameworks and libraries, my preference is the stack with React, React Native and NodeJS. Two things that describe me as a professional are: learning new things and sharing sharing knowledge.",
+  "about-me-second-paragraph": "Like any good life, mine isn't just about work either. In my spare time I like to spend it with my wife orin other things like: going to church, playing sports, singing, playing (piano, guitar), traveling, watching a good movie, etc."
 }

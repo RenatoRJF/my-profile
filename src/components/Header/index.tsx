@@ -1,10 +1,13 @@
 import * as React from 'react';
 import styled from 'styled-components';
+import { AppContext } from '../AppProvider';
+import { ActionTypes } from '../AppProvider/types';
+
 import SocialButtons from '../SocialButtons';
-import ProfilePhoto from '../../images/profile-photo.svg';
+import ProfilePhoto from '../../images/profile-photo.png';
 import CodeArrowLeft from '../../images/code-arrow-left.svg';
 import CodeArrowRight from '../../images/code-arrow-right.svg';
-import Brazil from '../../images/brazil.svg';
+import Brazil from '../../images/icons/brazil.png';
 import Download from '../../images/download.svg';
 import CircleBackground from '../../images/circle-background.svg';
 import ArrowDown from '../../images/arrow-down.svg';
@@ -195,6 +198,15 @@ const Age = styled.h4({
 });
 
 export default function Header(): React.ReactElement {
+  const {state, dispatch} = React.useContext(AppContext);
+  
+  function handleChangeLanguage(lang: string): void {
+    dispatch({
+      type: ActionTypes.changeAppLang,
+      payload: { locale: lang }
+    });
+  }
+
   return (
     <HeaderWrapper>
       <HeaderTop>
@@ -222,8 +234,8 @@ export default function Header(): React.ReactElement {
             <DownloadIcon src={Download} />
           </DownloadCVButton>
 
-          <LangButton active>en</LangButton>
-          <LangButton>pt</LangButton>
+          <LangButton active={state.locale === 'en-US'} onClick={() => { handleChangeLanguage('en-US') }}>en</LangButton>
+          <LangButton active={state.locale === 'pt-BR'} onClick={() => { handleChangeLanguage('pt-BR') }}>pt</LangButton>
         </LangsAndCVWrapper>
       </HeaderTop>
 
