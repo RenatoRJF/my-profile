@@ -1,12 +1,29 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
-import Brazil from '../../images/icons/brazil.png';
-import Netherlands from '../../images/icons/netherlands.png';
-import England from '../../images/icons/england.png';
-import Portugal from '../../images/icons/portugal.png';
+import Brazil from '../../images/icons/flags/brazil.png';
+import Netherlands from '../../images/icons/flags/netherlands.png';
+import England from '../../images/icons/flags/england.png';
+import Portugal from '../../images/icons/flags/portugal.png';
 
-import VueIcon from '../../images/icons/vue-icon.svg';
+import AngularIcon from '../../images/icons/technologies/angular.png';
+import CSS3Icon from '../../images/icons/technologies/CSS3.png';
+import HTML5Icon from '../../images/icons/technologies/HTML5.png';
+import JavascriptIcon from '../../images/icons/technologies/javascript.png';
+import NodeJSIcon from '../../images/icons/technologies/nodejs.png';
+import PolymerIcon from '../../images/icons/technologies/polymer.png';
+import ReactIcon from '../../images/icons/technologies/react.png';
+import TypeScriptIcon from '../../images/icons/technologies/typescript.png';
+import CSharpIcon from '../../images/icons/technologies/CSharp.png';
+import VueIcon from '../../images/icons/technologies/vue.png';
+import JestIcon from '../../images/icons/technologies/jest.png';
+import KarmaIcon from '../../images/icons/technologies/karma.png';
+import JasmineIcon from '../../images/icons/technologies/jasmine.png';
+import GoogleMapsIcon from '../../images/icons/technologies/maps.png';
+import D3JSIcon from '../../images/icons/technologies/d3js.png';
+import GulpIcon from '../../images/icons/technologies/gulp.png';
+import WebpackIcon from '../../images/icons/technologies/webpack.png';
+import ReduxIcon from '../../images/icons/technologies/redux.png';
 
 import Vonq from '../../images/companies/vonq.png';
 import Alepe from '../../images/companies/alepe.png';
@@ -104,6 +121,7 @@ const Description = styled.p({
 const Technologies = styled.div({
   display: 'flex',
   marginBottom: 20,
+  marginTop: 20,
   justifyContent: 'flex-end',
 });
 
@@ -150,10 +168,24 @@ export default function Experiences({ data }: ExperiencesProps): React.ReactElem
   };
 
   const technImages: any = {
-    vue: VueIcon,
-    react: VueIcon,
-    polymer: VueIcon,
-    angular: VueIcon
+    Vue: VueIcon,
+    React: ReactIcon,
+    Polymer: PolymerIcon,
+    AngularJS: AngularIcon,
+    CSS3: CSS3Icon,
+    HTML5: HTML5Icon,
+    Javascript: JavascriptIcon,
+    Nodejs: NodeJSIcon,
+    Typescript: TypeScriptIcon,
+    CSharp: CSharpIcon,
+    Jest: JestIcon,
+    Karma: KarmaIcon,
+    Jasmine: JasmineIcon,
+    Gulp: GulpIcon,
+    Webpack: WebpackIcon,
+    Redux: ReduxIcon,
+    'Google Maps': GoogleMapsIcon,
+    'D3.js': D3JSIcon,
   };
 
   return (
@@ -183,7 +215,7 @@ export default function Experiences({ data }: ExperiencesProps): React.ReactElem
               <SingleTech>
                 {technologies.map(tech => 
                   <Fragment key={tech}>
-                    <TechIcon src={technImages[tech.toLocaleLowerCase()]} alt={tech} /> 
+                    <TechIcon src={technImages[tech]} alt={tech} /> 
                     <TechLabel>{tech}</TechLabel>
                   </Fragment>
                 )}

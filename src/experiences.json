@@ -19,7 +19,7 @@
       "role": "Senior Frontend Engineer",
       "isCurrent": false,
       "jobDescription": "Thales group is a multinational company whose main products are systems related to security, military and transportation. As frontend developer at the Thales Group Portugal, I was responsible for creating core components based in Javascript and Web Components concept. The goal of building these web Components were to share functional modules of software to other developers of Thales around the world and help them to maintain the consistency between different applications. I was also responsible for leading a small team of junior developers. The main technologies I used in this experience were: Polymer, Typescript, ES6+, HTML5, CSS3, NodeJs, Selenium. We were also using SCRUM as agile methodology and TDD programming practice.",
-      "technologies": ["Javascript", "Typescript", "Jest", "Polymer", "HTML5", "CSS3", "Webpack"],
+      "technologies": ["Javascript", "Typescript", "Redux", "Jest", "Polymer", "HTML5", "CSS3", "Webpack"],
       "period": "APRIL 2018 to JULY 2019"
     },
     {
@@ -52,7 +52,7 @@
       "role": "Senior Frontend Engineer",
       "isCurrent": false,
       "jobDescription": "Planedia was a startup based in Portugal whose product was an application for planning trips. As Frontend developer, my main responsibilities were to migrate the application from AngularJS to React + Redux. The main technologies I used in this experience were: AngularJS, React + Redux, HTML, CSS3, Karma, Jasmine, Chai. We were using SCRUM as agile methodology and TDD programming practice.",
-      "technologies": ["React", "AngularJS", "Javascript", "HTML5", "CSS3", "Gulp", "Karma", "Jasmine"],
+      "technologies": ["React", "Redux", "AngularJS", "Javascript", "HTML5", "CSS3", "Gulp", "Jest"],
       "period": "OCTOBER 2015 - NOVEMBER 2016"
     },
     {

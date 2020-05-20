@@ -7,7 +7,7 @@ import SocialButtons from '../SocialButtons';
 import ProfilePhoto from '../../images/profile-photo.png';
 import CodeArrowLeft from '../../images/code-arrow-left.svg';
 import CodeArrowRight from '../../images/code-arrow-right.svg';
-import Brazil from '../../images/icons/brazil.png';
+import Brazil from '../../images/icons/flags/brazil.png';
 import Download from '../../images/download.svg';
 import CircleBackground from '../../images/circle-background.svg';
 import ArrowDown from '../../images/arrow-down.svg';
