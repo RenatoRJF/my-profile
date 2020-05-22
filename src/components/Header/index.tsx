@@ -13,6 +13,8 @@ import CircleBackground from '../../images/circle-background.svg';
 import ArrowDown from '../../images/arrow-down.svg';
 import Angle from '../../images/angle.svg';
 
+import CV from "../../renato-ferreira-CV-English.pdf";
+
 interface LangButtonProps {
   active?: boolean;
 }
@@ -94,7 +96,7 @@ const LangsAndCVWrapper = styled.div({
   display: 'flex'
 });
 
-const DownloadCVButton = styled.button({
+const DownloadCVLink = styled.a({
   color: '#FFEF95',
   border: 0,
   backgroundColor: 'rgba(255, 255, 255, 0.28)',
@@ -105,6 +107,7 @@ const DownloadCVButton = styled.button({
   fontSize: 16,
   outline: 'none',
   cursor: 'pointer',
+  textDecoration: 'none',
   
   '&:hover': {
     backgroundColor: 'rgba(255, 255, 255, 0.38)',
@@ -229,10 +232,10 @@ export default function Header(): React.ReactElement {
         </PhotoWrapper>
 
         <LangsAndCVWrapper>
-          <DownloadCVButton>
+          <DownloadCVLink href={CV} download="Renato-Ferreira-CV-English.pdf">
             CV pdf
             <DownloadIcon src={Download} />
-          </DownloadCVButton>
+          </DownloadCVLink>
 
           <LangButton active={state.locale === 'en-US'} onClick={() => { handleChangeLanguage('en-US') }}>en</LangButton>
           <LangButton active={state.locale === 'pt-BR'} onClick={() => { handleChangeLanguage('pt-BR') }}>pt</LangButton>
